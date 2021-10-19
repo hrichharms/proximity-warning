@@ -1,0 +1,3 @@
+goals
+- 32 fps
+- 90% accuracy
