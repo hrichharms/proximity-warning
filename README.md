@@ -7,7 +7,7 @@ Project components described bellow each have separate directories in src direct
 - when run as an independent program, the detector monitors either provided video frames or captured camera frames for vehicles and prints warning decisions for each evaluated frame to standard output
 - when imported as python module, provides access to:
     - `check_frame` function, which makes a warning decision for a single given frame
-    - `monitor_source` class, which essentially provides a threaded api for the standalone program
+    - `Monitor` class, which essentially provides a threaded api for the standalone program
 
 ### Detector (C++)
 - independent program which monitors either provided video frames or captured camera frames for vehicles and prints warning decisions for each evaluated frame to standard output
