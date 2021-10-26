@@ -1,2 +1,2 @@
-from .detect import check_frame
+from .detect import Detector
 from .monitor import Monitor
