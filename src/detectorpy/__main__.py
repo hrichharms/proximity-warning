@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
         if gui:
             debug("Importing opencv gui functions...")
-            from cv2 import rectangle, imshow, waitKey
+            from cv2 import rectangle, imshow, waitKey, destroyAllWindows
 
         debug("Loading video capture object...")
         vid = VideoCapture(argv[2])
@@ -79,6 +79,11 @@ if __name__ == "__main__":
 
             except KeyboardInterrupt:
                 break
+
+        debug("Cleaning up...")
+        vid.release()
+        if gui:
+            destroyAllWindows()
 
         print(f"\nAVG. FPS: {frames // (datetime.now() - s).seconds}")
 
