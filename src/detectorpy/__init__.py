@@ -1,2 +1,2 @@
-from .detect import Detector
+from .detector import Detector
 from .monitor import Monitor
