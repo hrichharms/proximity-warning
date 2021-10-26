@@ -22,9 +22,9 @@ class Detector:
 
     def check_frame(self, frame: ndarray):
         """
-        Takes a frame in the BGR color space in the
-        form of a numpy array and uses self.classifier
-        to determine if a warning is warranted.
+        Takes a frame in the BGR color space in the form
+        of a numpy array and uses self.classifier to
+        determine if a proximity warning is required.
         """
 
         # convert bgr frame to grayscale
