@@ -78,6 +78,7 @@ if __name__ == "__main__":
                         debug("PROXIMITY WARNING!")
 
             except KeyboardInterrupt:
+                debug("Breaking decision loop...")
                 break
 
         debug("Cleaning up...")
