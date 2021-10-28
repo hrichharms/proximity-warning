@@ -1,4 +1,8 @@
-## Components
+## Proximity Warning System
+
+The purpose of the code in this repository is to build out the foundation for a system that can be used for a camera-based proximity warning and ride camera system.
+
+## Contents
 
 Project components described bellow each have separate directories in src directory.
 
