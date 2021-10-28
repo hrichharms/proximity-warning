@@ -1,3 +1,4 @@
+![Build Status](https://github.com/hrichharms/theia/actions/workflows/integrate.yml/badge.svg)
 
 
 ## Proximity Warning System
