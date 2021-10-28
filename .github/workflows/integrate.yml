@@ -2,6 +2,8 @@ name: Build Status
 
 on:
   push:
+    paths:
+      - 'src/detectorcpp/**'
     branches: [ master ]
 
 jobs:
