@@ -5,7 +5,7 @@
 #include "detector.hpp"
 
 
-Detector::Detector(std::string classifier_path, int t, int s, int m) {
+Detector::Detector(std::string classifier_path, int t, float s, int m) {
     threshold = t;
     scale_factor = s;
     min_neighbors = m;
@@ -21,7 +21,7 @@ bool Detector::check_frame(cv::Mat frame, int &n, cv::Rect &closest) {
 
     // locate objects in frame
     std::vector<cv::Rect> objects;
-    classifier.detectMultiScale(gray_frame, objects);
+    classifier.detectMultiScale(gray_frame, objects, scale_factor, min_neighbors);
     n = objects.size();
 
     // if no objects have been found, return no warning and leave closest unchanged

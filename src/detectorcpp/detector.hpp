@@ -11,7 +11,7 @@ class Detector {
         int min_neighbors;
         cv::CascadeClassifier classifier;
 
-        Detector(std::string cpath, int t, int s, int m);
+        Detector(std::string cpath, int t, float s, int m);
 
         bool check_frame(cv::Mat frame, int &n, cv::Rect &closest);
 
