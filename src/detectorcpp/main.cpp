@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ctime>
 
+#include <opencv2/imgproc.hpp>
 #include <opencv2/videoio.hpp>
 #include <opencv2/highgui.hpp>
 
@@ -58,7 +59,7 @@ int main(int argc, char *argv[]) {
         while (vid.read(frame)) {
 
             // check frame using detector's classifier
-            warning detector.check_frame(frame, n, closest);
+            warning = detector.check_frame(frame, n, closest);
 
             if (gui) {
 
@@ -72,7 +73,7 @@ int main(int argc, char *argv[]) {
                         g = 0;
                         r = 0;
                     }
-                    cv::rectangle(frame, cv::Point(closest.x, closest.y), cv::Point(closest.x + closest.width, closest.y + closest.height), cv::Scalar(b, g, r), 3);
+                    cv::rectangle(frame, closest, cv::Scalar(b, g, r), 3);
                 }
 
                 cv::namedWindow("Frame", cv::WINDOW_AUTOSIZE);
@@ -84,7 +85,7 @@ int main(int argc, char *argv[]) {
 
             } else {
                 if (warning) {
-                    debug("PROXIMITY WARNING!")
+                    debug("PROXIMITY WARNING!");
                 }
             }
 
