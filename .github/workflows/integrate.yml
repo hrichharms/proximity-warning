@@ -10,6 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: sudo apt install libopencv-dev -y
-      - run: cd src/detectorcpp
       - run: cmake .
       - run: make
