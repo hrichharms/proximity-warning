@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
                 cv::namedWindow("Frame", cv::WINDOW_AUTOSIZE);
                 cv::imshow("Frame", frame);
 
-                if (cv::waitKey(100) == 27) {
+                if (cv::waitKey(1) == 27) {
                     break;
                 }
 
