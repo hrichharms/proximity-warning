@@ -69,5 +69,8 @@ if __name__ == "__main__":
             with open(join(files_dir, filename), "wb") as file:
                 file.write(data)
 
+        debug("Closing client connection...")
+        conn.close()
+
     debug("Closing socket object...")
     s.close()
