@@ -23,7 +23,7 @@ The source code for each component listed below can be found in separate folders
 
 ### Upload Client
 - client to automatically upload video footage captured by detector component
-- optional steganographic watermarking
+- hidden tracking watermark
 
 ### Upload Server
 - server to receive video data from upload client component
