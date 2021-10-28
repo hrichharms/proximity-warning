@@ -7,7 +7,7 @@ The purpose of this repository is to provide the foundation of a camera based pr
 
 Included Haar Cascade Classifier taken from [here](https://github.com/AdityaPai2398/Vehicle-And-Pedestrian-Detection-Using-Haar-Cascades).
 
-## Contents
+## Components
 
 The source code for each component listed below can be found in separate folders in src.
 
