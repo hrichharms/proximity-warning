@@ -1,6 +1,4 @@
-<a href="https://github.com/TheAlgorithms/Python/actions">
-    <img src="https://img.shields.io/github/workflow/status/TheAlgorithms/Python/build?label=CI&logo=github&style=flat-square" height="20" alt="GitHub Workflow Status">
-  </a>
+
 
 ## Proximity Warning System
 
