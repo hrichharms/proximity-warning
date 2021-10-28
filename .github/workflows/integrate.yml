@@ -2,7 +2,7 @@ name: Continuous Integration
 
 on:
   push:
-    - master
+    branches: [ master ]
 
 jobs:
   test_push:
