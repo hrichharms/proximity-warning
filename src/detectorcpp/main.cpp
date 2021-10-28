@@ -50,14 +50,42 @@ int main(int argc, char *argv[]) {
         Detector detector(CLASSIFIER_PATH, 100, 1.1, 4);
 
         debug("Starting decision loop...");
-        cv::Mat frame;
+        cv::Mat frame; // current video frame
+        cv::Rect closest; // closest detected object
+        int n; // number of detected objects
+        int b, g, r; // colors of drawn rectangle
+        bool warning; // whether a proxity warning is being currently advised
         while (vid.read(frame)) {
 
-            cv::namedWindow("Frame", cv::WINDOW_AUTOSIZE);
-            cv::imshow("Frame", frame);
+            // check frame using detector's classifier
+            warning detector.check_frame(frame, n, closest);
 
-            if (cv::waitKey(100) == 27) {
-                break;
+            if (gui) {
+
+                if (n) {
+                    if (warning) {
+                        b = 0;
+                        g = 0;
+                        r = 255;
+                    } else {
+                        b = 255;
+                        g = 0;
+                        r = 0;
+                    }
+                    cv::rectangle(frame, cv::Point(closest.x, closest.y), cv::Point(closest.x + closest.width, closest.y + closest.height), cv::Scalar(b, g, r), 3);
+                }
+
+                cv::namedWindow("Frame", cv::WINDOW_AUTOSIZE);
+                cv::imshow("Frame", frame);
+
+                if (cv::waitKey(100) == 27) {
+                    break;
+                }
+
+            } else {
+                if (warning) {
+                    debug("PROXIMITY WARNING!")
+                }
             }
 
         }
