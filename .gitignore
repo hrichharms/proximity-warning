@@ -1,1 +1,6 @@
 __pycache__
+DetectorCPP
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
