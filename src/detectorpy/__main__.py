@@ -26,7 +26,7 @@ if __name__ == "__main__":
         debug("Importing video capture class from opencv...")
         from cv2 import VideoCapture
 
-        # check if gui i sactivated
+        # check if gui is activated
         gui = bool(int(argv[3]))
 
         if gui:
