@@ -18,7 +18,6 @@ The source code for each component listed below can be found in separate folders
 - when run as an independent program, the detector monitors either provided video frames or captured camera frames (raspberry pi camera module) for vehicles and prints warning decisions for each evaluated frame to standard output
 - when imported as python module, provides access to:
     - `Detector` class: provides high-level access to a given haar classifier specialized for simple proximity detection.
-    - `Monitor` class: provides a threaded implementation of the standalone program for integration in larger projects.
 
 ### Detector (C++)
 - independent executable, which monitors either provided video frames or captured camera frames (raspberry pi camera module) for vehicles and prints warning decisions for each evaluated frame to standard output
