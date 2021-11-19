@@ -3,7 +3,7 @@
 
 ## Proximity Warning System
 
-The purpose of this repository is to provide the foundation of a camera based proximity warning and ride camera system.
+The purpose of this repository is to provide the primitive foundations of a camera based proximity warning and ride camera system.
 
 The classifier system included in this project isn't particularly accurate. For a production environment, a more sophisticated solution is advised.
 
