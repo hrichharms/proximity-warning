@@ -24,6 +24,7 @@ The source code for each component listed below can be found in separate folders
 
 ### Upload Client
 - client to automatically upload video footage captured by detector component
+- [steganographic watermarking system](https://github.com/hrichharms/video_frame_stego) can be included here to track videos over social media using web-crawling
 
 ### Upload Server
 - server to receive video data from upload client component
