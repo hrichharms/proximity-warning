@@ -21,10 +21,3 @@ The source code for each component listed below can be found in separate folders
 
 ### Detector (C++)
 - independent executable, which monitors either provided video frames or captured camera frames (raspberry pi camera module) for vehicles and prints warning decisions for each evaluated frame to standard output
-
-### Upload Client
-- client to automatically upload video footage captured by detector component
-- [steganographic watermarking system](https://github.com/hrichharms/video_frame_stego) can be included here to track videos over social media using web-crawlers
-
-### Upload Server
-- server to receive video data from upload client component
