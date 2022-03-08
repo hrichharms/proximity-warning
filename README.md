@@ -20,4 +20,4 @@ The source code for each component listed below can be found in separate folders
     - `Detector` class: provides high-level access to a given haar classifier specialized for simple proximity detection.
 
 ### Detector (C++)
-- independent executable, which monitors either provided video frames or captured camera frames (raspberry pi camera module) for vehicles and prints warning decisions for each evaluated frame to standard output
+- independent executable, which monitors provided video frames for vehicles and prints warning decisions for each evaluated frame to standard output
